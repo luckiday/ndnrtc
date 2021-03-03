@@ -92,7 +92,7 @@ sudo apt-get install libboost-all-dev cmake wget autoconf automake libtool git p
 ```Shell
 cd $NDNRTC_ENV
 mkdir webrtc-checkout && cd webrtc-checkout/
-fetch --nohooks webrtc
+fetch --nohooks --no-history webrtc
 cd src
 git checkout -b branch-heads-59 refs/remotes/branch-heads/59
 gclient sync
